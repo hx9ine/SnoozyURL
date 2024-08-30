@@ -12,8 +12,8 @@ function Iphone() {
       if (iphone) {
         iphone.style.transform = `translate(-50%, -50%) scale(${scaleValue})`;
 
-        const fadeStart = 0.6 * maxScroll; // 60% of the scroll
-        const fadeEnd = 0.9 * maxScroll; // 90% of the scroll
+        const fadeStart = 0.55 * maxScroll; // 55% of the scroll
+        const fadeEnd = 0.85 * maxScroll; // 85% of the scroll
 
         if (scrollY > fadeStart) {
           const opacity = 1 - (scrollY - fadeStart) / (fadeEnd - fadeStart);
@@ -38,7 +38,7 @@ function Iphone() {
     >
       <div
         id="screen"
-        className="w-full h-full light:bg-white dark:bg-black rounded-[40px] border-[11px] border-black overflow-hidden relative"
+        className="w-full h-full bg-white dark:bg-black rounded-[40px] border-[11px] border-black overflow-hidden relative"
       >
         <div
           id="dynamic-island"
